@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunset Park - Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,6 +12,9 @@
       color: #333;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
       background: #ff6600;
@@ -23,46 +26,70 @@
       margin: 0;
       font-size: 2.5em;
     }
-    .menu-feuille {
-      max-width: 800px;
+    .container {
+      display: flex;
+      flex: 1;
+      max-width: 1200px;
       margin: 20px auto;
-      padding: 30px;
+      gap: 20px;
+    }
+    .menu-section {
+      flex: 1;
       background: white;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      line-height: 1.8em;
-      font-size: 1.1em;
+      padding: 30px;
     }
-    .menu-feuille h2 {
+    .menu-section h2 {
       color: #ff6600;
-      margin-top: 20px;
+      border-bottom: 2px solid #ff6600;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px dashed #ddd;
+    }
+    .menu-item-name {
+      font-weight: bold;
+    }
+    .menu-item-price {
+      color: #ff6600;
     }
     .social {
       text-align: center;
       margin: 30px 0;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .social a {
-      margin: 0 10px;
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 15px;
+    }
+    .social-link {
+      display: flex;
+      align-items: center;
       text-decoration: none;
       color: #ff6600;
       font-weight: bold;
+      transition: transform 0.3s;
     }
-    .qr-code {
-      text-align: center;
-      margin: 20px 0;
-      padding: 20px;
+    .social-link:hover {
+      transform: scale(1.1);
     }
-    .qr-code img {
-      max-width: 200px;
-      border: 1px solid #ddd;
-      padding: 10px;
-      background: white;
+    .social-icon {
+      font-size: 24px;
+      margin-right: 8px;
     }
-    .qr-code p {
-      margin-top: 10px;
-      font-weight: bold;
-      color: #ff6600;
-    }
+    .instagram { color: #E1306C; }
+    .facebook { color: #3b5998; }
   </style>
 </head>
 <body>
@@ -71,25 +98,110 @@
     <p>Bienvenue ! Découvrez notre menu</p>
   </header>
 
-  <div class="menu-feuille">
-    <h2>Menu</h2>
-    <p><strong>Cafés :</strong> Express (2000), Capucin (2500), Café turc (2500), Café au chocolat (2500), Café américain (2500), Direct (2000), Capuccino (2500), Café liégeois (6000).</p>
-    <p><strong>Boissons :</strong> Soda (2500), Eau 0.5L (1500), Eau 1L (2000), Eau 1.5L (2500).</p>
-    <p><strong>Thés :</strong> Thé vert (2000), Thé infusion (2500), Thé vert aux amandes (3000).</p>
-    <p><strong>Jus :</strong> Jus de citron (3000), Jus de citron aux amandes (4500), Jus de fraise (4000), Lait de poule (4500), Mojito (5000), Cocktail SUNSET (6000).</p>
-    <p><strong>Glaces :</strong> 2 boules (4000), 3 boules (5000), Banana Split (7000).</p>
-    <p><strong>Chicha :</strong> Chicha Jirak (5000), Chicha Parfumée (6000).</p>
+  <div class="container">
+    <div class="menu-section">
+      <h2>Boissons</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Eau 0.5L</span>
+        <span class="menu-item-price">1dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Eau 1.5L</span>
+        <span class="menu-item-price">2dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Soda</span>
+        <span class="menu-item-price">2.5dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Jus de fraise</span>
+        <span class="menu-item-price">5dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Jus de citronade</span>
+        <span class="menu-item-price">4dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Citronade aux amandes</span>
+        <span class="menu-item-price">5dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Thé</span>
+        <span class="menu-item-price">2dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Thé aux amandes</span>
+        <span class="menu-item-price">3.5dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Express</span>
+        <span class="menu-item-price">2dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Cappuccin</span>
+        <span class="menu-item-price">2.5dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Direct</span>
+        <span class="menu-item-price">3dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Cappuccino</span>
+        <span class="menu-item-price">5dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Café liégeois</span>
+        <span class="menu-item-price">6.5dt</span>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Glaces</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">2 boules</span>
+        <span class="menu-item-price">4dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">3 boules</span>
+        <span class="menu-item-price">5dt</span>
+      </div>
+
+      <h2>Pizzas</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Margherita</span>
+        <span class="menu-item-price">10dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Neptune</span>
+        <span class="menu-item-price">12dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Végétarienne</span>
+        <span class="menu-item-price">12dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">4 Fromages</span>
+        <span class="menu-item-price">15dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Fruits de mer</span>
+        <span class="menu-item-price">20dt</span>
+      </div>
+    </div>
   </div>
 
   <div class="social">
     <p>Suivez-nous sur les réseaux :</p>
-    <a href="https://www.instagram.com/sunset__park___?igsh=MWowdXZ2NTMzd3Bpbg==" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/profile.php?id=100083131160742" target="_blank">Facebook</a>
-  </div>
-
-  <div class="qr-code">
-    <p>Scannez pour visiter notre site</p>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://sunsetpark.cafe" alt="QR Code">
+    <div class="social-links">
+      <a href="https://www.instagram.com/sunset__park___?igsh=MWowdXZ2NTMzd3Bpbg==" target="_blank" class="social-link">
+        <i class="fab fa-instagram social-icon instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100083131160742" target="_blank" class="social-link">
+        <i class="fab fa-facebook-f social-icon facebook"></i>
+        <span>Facebook</span>
+      </a>
+    </div>
   </div>
 </body>
 </html>
