@@ -32,9 +32,11 @@
       max-width: 1200px;
       margin: 20px auto;
       gap: 20px;
+      flex-wrap: wrap;
     }
     .menu-section {
       flex: 1;
+      min-width: 300px;
       background: white;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -66,6 +68,10 @@
       background: white;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
     }
     .social-links {
       display: flex;
@@ -100,92 +106,249 @@
 
   <div class="container">
     <div class="menu-section">
-      <h2>Boissons</h2>
+      <h2>Pizza</h2>
       <div class="menu-item">
-        <span class="menu-item-name">Eau 0.5L</span>
-        <span class="menu-item-price">1dt</span>
+        <span class="menu-item-name">Pizza Neptune</span>
+        <span class="menu-item-price">13dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">Eau 1.5L</span>
-        <span class="menu-item-price">2dt</span>
+        <span class="menu-item-name">Pizza Peperroni</span>
+        <span class="menu-item-price">15dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">Soda</span>
-        <span class="menu-item-price">2.5dt</span>
+        <span class="menu-item-name">Pizza 4 Saisons</span>
+        <span class="menu-item-price">15dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">Jus de fraise</span>
+        <span class="menu-item-name">Pizza Escalope</span>
+        <span class="menu-item-price">18dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Pizza 4 Fromages</span>
+        <span class="menu-item-price">18dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Pizza Fruits de Mer</span>
+        <span class="menu-item-price">25dt</span>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Glace</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">2 Boules</span>
         <span class="menu-item-price">5dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">Jus de citronade</span>
-        <span class="menu-item-price">4dt</span>
+        <span class="menu-item-name">3 Boules</span>
+        <span class="menu-item-price">6dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">Citronade aux amandes</span>
+        <span class="menu-item-name">Banana split</span>
+        <span class="menu-item-price">10dt</span>
+      </div>
+
+      <h2>Crêpe</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Crêpe salé (thon+fromage)</span>
+        <span class="menu-item-price">7dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Crêpe spéciale</span>
+        <span class="menu-item-price">8dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Crêpe chocolat</span>
+        <span class="menu-item-price">6dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Crêpe Nutella</span>
+        <span class="menu-item-price">8dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Crêpe nutella+banane+amande</span>
+        <span class="menu-item-price">12dt</span>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Brik</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Brik au thon</span>
         <span class="menu-item-price">5dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">Thé</span>
-        <span class="menu-item-price">2dt</span>
+        <span class="menu-item-name">Brik au chevrette</span>
+        <span class="menu-item-price">6dt</span>
+      </div>
+
+      <h2>Ojja</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Ojja escalope</span>
+        <span class="menu-item-price">18dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">Thé aux amandes</span>
-        <span class="menu-item-price">3.5dt</span>
+        <span class="menu-item-name">Ojja merguez</span>
+        <span class="menu-item-price">17dt</span>
       </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Ojja fruit de mer</span>
+        <span class="menu-item-price">20dt</span>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Plat</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Plat escalope (pané / grillé)</span>
+        <span class="menu-item-price">23dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Plat daurade</span>
+        <span class="menu-item-price">25dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Cordon bleu</span>
+        <span class="menu-item-price">23dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Plat loup de mer</span>
+        <span class="menu-item-price">30dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Plat calamar (pané/ grillé)</span>
+        <span class="menu-item-price">35dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Spaghetti fruits de mer</span>
+        <span class="menu-item-price">30dt</span>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Chicha</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Chicha jirak</span>
+        <span class="menu-item-price">5dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Chicha parfumé</span>
+        <span class="menu-item-price">8dt</span>
+      </div>
+
+      <h2>Café</h2>
       <div class="menu-item">
         <span class="menu-item-name">Express</span>
         <span class="menu-item-price">2dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">Cappuccin</span>
+        <span class="menu-item-name">Café au chocolat</span>
         <span class="menu-item-price">2.5dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">Direct</span>
+        <span class="menu-item-name">Capucin</span>
+        <span class="menu-item-price">2.5dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Café américain</span>
+        <span class="menu-item-price">3dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Café turc</span>
         <span class="menu-item-price">3dt</span>
       </div>
       <div class="menu-item">
         <span class="menu-item-name">Cappuccino</span>
-        <span class="menu-item-price">5dt</span>
+        <span class="menu-item-price">6dt</span>
       </div>
       <div class="menu-item">
         <span class="menu-item-name">Café liégeois</span>
-        <span class="menu-item-price">6.5dt</span>
+        <span class="menu-item-price">7dt</span>
       </div>
     </div>
 
     <div class="menu-section">
-      <h2>Glaces</h2>
+      <h2>Petit Déjeuner</h2>
       <div class="menu-item">
-        <span class="menu-item-name">2 boules</span>
+        <span class="menu-item-name">Petit Déj sucré</span>
+        <span class="menu-item-price">15dt</span>
+      </div>
+      <div class="menu-item-description">café(Direct/capucin/express)+cake+jus
+        +eau+beurre+confiture+chocolat+omlette</div>
+         <br> </br>
+      <div class="menu-item">
+        <span class="menu-item-name">Petit Déj salé</span>
+        <span class="menu-item-price">18dt</span>
+      </div>
+      <div class="menu-item-description">café(Direct/capucin/express)+cake+jus
+        +eau+jambon+fromage+thon+omlette</div>
+     <br> </br>
+      <div class="menu-item">
+        <span class="menu-item-name">Petit Déj SUNSET PARK</span>
+        <span class="menu-item-price">30dt</span>
+      </div>
+      <div class="menu-item-description">2 café+2 cakes+2jus+eau+beurre
+        +confiture+chocolat+jambon+fromage
+        +thon+omlette</div>
+<br></br>
+      <h2>Jus</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Jus de fraise</span>
+        <span class="menu-item-price">6dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Jus de citron</span>
+        <span class="menu-item-price">5dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Jus de citron aux amandes</span>
+        <span class="menu-item-price">7dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Lait de poule</span>
+        <span class="menu-item-price">6dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Mojito</span>
+        <span class="menu-item-price">6dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Cocktail SUNSET</span>
+        <span class="menu-item-price">7dt</span>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Boissons</h2>
+      <div class="menu-item">
+        <span class="menu-item-name">Soda</span>
+        <span class="menu-item-price">3dt</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Boga menthe</span>
         <span class="menu-item-price">4dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">3 boules</span>
-        <span class="menu-item-price">5dt</span>
+        <span class="menu-item-name">Eau 1.5L</span>
+        <span class="menu-item-price">2dt</span>
       </div>
 
-      <h2>Pizzas</h2>
+      <h2>Thé</h2>
       <div class="menu-item">
-        <span class="menu-item-name">Margherita</span>
-        <span class="menu-item-price">10dt</span>
+        <span class="menu-item-name">Thé vert</span>
+        <span class="menu-item-price">2dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">Neptune</span>
-        <span class="menu-item-price">12dt</span>
+        <span class="menu-item-name">Thé menthe</span>
+        <span class="menu-item-price">2.5dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">Végétarienne</span>
-        <span class="menu-item-price">12dt</span>
+        <span class="menu-item-name">Thé vert aux amandes</span>
+        <span class="menu-item-price">4dt</span>
       </div>
       <div class="menu-item">
-        <span class="menu-item-name">4 Fromages</span>
-        <span class="menu-item-price">15dt</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Fruits de mer</span>
-        <span class="menu-item-price">20dt</span>
+        <span class="menu-item-name">Thé infussion</span>
+        <span class="menu-item-price">2.5dt</span>
       </div>
     </div>
   </div>
